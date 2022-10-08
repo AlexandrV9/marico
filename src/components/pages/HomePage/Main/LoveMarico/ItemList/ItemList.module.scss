@@ -1,0 +1,25 @@
+.ItemList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 10rem;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    p {
+      margin-left: 1rem;
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 4rem;
+    }
+  }
+  & > p {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 33px;
+    color: #707070;
+  }
+}
