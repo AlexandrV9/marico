@@ -7,7 +7,7 @@ export default styled.li`
   padding: 3.5rem;
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 1fr 1fr 105px;
+  grid-template-rows: 280px 1fr 105px;
   row-gap: 4rem;
 
   &.active {
@@ -16,7 +16,7 @@ export default styled.li`
     .price p,
     .secondary,
     .priceSubtitleTwo {
-    color: white;
+      color: white;
     }
 
   }
@@ -35,14 +35,14 @@ export default styled.li`
     color: #b4b1b1;
     margin-bottom: 1.4rem;
   }
+  
+  .wrapper-price {
+    /* min-height: 14rem; */
+  }
 
   .price {
     display: flex;
     margin-bottom: 1rem;
-
-    &.with-installment-plan {
-      margin-bottom: 8.8rem;
-    }
 
     h3 {
       font-weight: 700;

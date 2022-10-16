@@ -1,4 +1,8 @@
-import { StringMappingType } from "typescript";
+import pathProfile1 from "../images/Profile-1.png";
+import pathProfile2 from "../images/Profile-2.png";
+import pathProfile3 from "../images/Profile-3.png";
+
+
 
 export interface itemListLoveMarico {
   id: number,
@@ -116,7 +120,7 @@ export const dataListNavFooter: Array<itemListNavFooter> = [
 export const dataListNavHeader: Array<itemListNavHeader> = [
   {
     title: "Use Cases",
-    link: "/about",
+    link: "/use-cases",
     id: 11
   },
   {
@@ -204,4 +208,60 @@ export const dataListPlan:  Array<itemPlan> = [
       },
     ]
   }
+]
+
+export interface itemLinksSM {
+  id: number,
+  nameSM: string,
+  linkSM: string
+}
+
+export interface itemTeam {
+  id: number,
+  name: string,
+  pathProfile?: string,
+  profession: string,
+  listLinksSM?: Array<itemLinksSM>
+}
+
+export const dataTeam: Array<itemTeam> = [
+  {
+    id: 24,
+    name: "Jacob Mark",
+    profession: "CEO & Design",
+    pathProfile: pathProfile1,
+    listLinksSM: [
+      {
+        id: 25,
+        nameSM: 'Twitter',
+        linkSM: "/jacob-mark"
+      }
+    ]
+  },
+  {
+    id: 26,
+    name: "Daniel",
+    profession: "CTO & Development",
+    pathProfile: pathProfile2,
+    listLinksSM: [
+      {
+        id: 27,
+        nameSM: 'Twitter',
+        linkSM: "/daniel"
+      }
+    ]
+  },
+  {
+    id: 28,
+    name: "Ryan Trump",
+    profession: "COO & Sales",
+    pathProfile: pathProfile3,
+    listLinksSM: [
+      {
+        id: 29,
+        nameSM: 'Twitter',
+        linkSM: "/ryan-trump"
+      }
+    ]
+  },
 ]

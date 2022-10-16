@@ -12,7 +12,7 @@ export default styled.section`
   .list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 98.9rem;
+    grid-auto-rows: 100rem;
     gap: 2rem 7.6rem
   }
 `;

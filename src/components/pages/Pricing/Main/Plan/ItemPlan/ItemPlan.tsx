@@ -13,22 +13,23 @@ interface ItemPlanProps {
 
 export const ItemPlan = ({ data }: ItemPlanProps) => {
   return (
-    <StyledItemPlan className={`${data.id === 21 ? 'active': ''}`}>
-
+    <StyledItemPlan className={`${data.id === 21 ? "active" : ""}`}>
       <div>
         <p className="title">{data.title}</p>
         <p className="subtitle">{data.titleSubtitle}</p>
-        <div
-          className={`price ${
-            data?.priceSubtitleOne ? "" : "with-installment-plan"
-          }`}
-        >
-          <h3>{data.price}</h3>
-          {data?.priceSubtitleOne && <p>{data.priceSubtitleOne}</p>}
+        <div className="wrapper-price">
+          <div
+            className={`price ${
+              data?.priceSubtitleOne ? "" : "with-installment-plan"
+            }`}
+          >
+            <h3>{data.price}</h3>
+            {data?.priceSubtitleOne && <p>{data.priceSubtitleOne}</p>}
+          </div>
+          {data?.priceSubtitleTwo && (
+            <p className="priceSubtitleTwo">{data.priceSubtitleTwo}</p>
+          )}
         </div>
-        {data?.priceSubtitleTwo && (
-          <p className="priceSubtitleTwo">{data.priceSubtitleTwo}</p>
-        )}
       </div>
 
       <div>
@@ -51,7 +52,9 @@ export const ItemPlan = ({ data }: ItemPlanProps) => {
         </ul>
       </div>
 
-      <Button classBtn={`${data.id === 21 ? 'fourth': 'third'}`}>{data.textBtn}</Button>
+      <Button classBtn={`${data.id === 21 ? "fourth" : "third"}`}>
+        {data.textBtn}
+      </Button>
     </StyledItemPlan>
   );
 };
