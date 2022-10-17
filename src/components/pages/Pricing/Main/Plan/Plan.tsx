@@ -17,7 +17,7 @@ export const Plan = () => {
             <ItemPlan 
               key={item.id}
               data={item}
-            />
+            /> 
           );
         })}
       </ul>

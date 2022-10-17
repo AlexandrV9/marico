@@ -16,9 +16,9 @@ export const Logo = ({
 }: LogoProps) => {
 
   return (
-    <StyledLogo>  
+    <StyledLogo className={classCustom}>  
       <IconLogo 
-        width={32}
+        width={widthLogo ? widthLogo : 32}
         classCustom={classCustom + 'Icon'}
       />
       <NavLink 

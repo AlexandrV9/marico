@@ -3,8 +3,9 @@ import {
   BrowserRouter, 
   Routes, 
   Route 
-} from "react-router-dom"
+} from "react-router-dom";
 
+import { AboutUs } from './components/pages/AboutUs';
 import { HomePage } from './components/pages/HomePage';
 import { Pricing } from './components/pages/Pricing';
 
@@ -13,7 +14,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/pricing" element={<Pricing />}/>
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );
