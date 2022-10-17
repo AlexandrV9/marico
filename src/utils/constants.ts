@@ -2,7 +2,17 @@ import pathProfile1 from "../images/Profile-1.png";
 import pathProfile2 from "../images/Profile-2.png";
 import pathProfile3 from "../images/Profile-3.png";
 
-
+import pathTwitter from "../icons/twitter.svg";
+import pathYouTube from "../icons/youtube.svg";
+import pathWordPress from "../icons/wordpress.svg";
+import pathSubstack from "../icons/download.svg";
+import pathMedium from "../icons/medium.svg";
+import pathSpotify from "../icons/spotify.svg";
+import pathAnchor from "../icons/anchor.svg";
+import pathApplePodcasts from "../icons/podcast.svg";
+import pathInstagram from "../icons/instagram.svg";
+import pathLinkedin from "../icons/linkedin.svg";
+import pathFackbook from "../icons/facebook.svg";
 
 export interface itemListLoveMarico {
   id: number,
@@ -263,5 +273,100 @@ export const dataTeam: Array<itemTeam> = [
         linkSM: "/ryan-trump"
       }
     ]
+  },
+];
+
+export interface itemContentSources {
+  id: number,
+  title: string,
+  text: string,
+  pathImg: string,
+  soon: boolean
+}
+
+export const dataContentSources: Array<itemContentSources> = [
+  {
+    id: 30,
+    title: "Twitter",
+    text: "Connect your Twitter feed to your Marico homepage.",
+    pathImg: pathTwitter,
+    soon: false,
+  },
+  {
+    id: 31,
+    title: "YouTube",
+    text: "Connect your YouTube feed to your Marico homepage.",
+    pathImg: pathYouTube,
+    soon: false,
+  },
+  {
+    id: 32,
+    title: "WordPress",
+    text: "Connect your WordPress feed to your Marico homepage.",
+    pathImg: pathWordPress,
+    soon: false,
+  },
+  {
+    id: 33,
+    title: "Substack",
+    text: "Connect your Substack feed to your Marico homepage.",
+    pathImg: pathSubstack,
+    soon: false,
+  },
+  {
+    id: 34,
+    title: "Medium",
+    text: "Connect your Medium feed to your Marico homepage.",
+    pathImg: pathMedium,
+    soon: false,
+  },
+  {
+    id: 35,
+    title: "RSS Feeds",
+    text: "Connect your RSS feed to your Marico homepage.",
+    pathImg: pathWordPress,
+    soon: true,
+  },
+  {
+    id: 36,
+    title: "Spotify",
+    text: "Connect your Spotify feed to your Marico homepage.",
+    pathImg: pathSpotify,
+    soon: false,
+  },
+  {
+    id: 37,
+    title: "Anchor",
+    text: "Connect your Anchor feed to your Marico homepage.",
+    pathImg: pathAnchor,
+    soon: false,
+  },
+  {
+    id: 38,
+    title: "Apple Podcasts",
+    text: "Connect your Apple Podcasts feed to your Marico homepage.",
+    pathImg: pathApplePodcasts,
+    soon: false,
+  },
+  {
+    id: 39,
+    title: "Instagram",
+    text: "Connect your Instagram feed to your Marico homepage.",
+    pathImg: pathInstagram,
+    soon: true,
+  },
+  {
+    id: 40,
+    title: "Linkedin",
+    text: "Connect your Linkedin feed to your Marico homepage.",
+    pathImg: pathLinkedin,
+    soon: true,
+  },
+  {
+    id: 41,
+    title: "Facebook",
+    text: "Connect your Facebook feed to your Marico homepage.",
+    pathImg: pathFackbook,
+    soon: true,
   },
 ]

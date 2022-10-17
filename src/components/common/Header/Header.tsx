@@ -12,7 +12,7 @@ interface HeaderProps {}
 
 export const Header = () => {
   return (
-    <StyledHeader>
+    <StyledHeader className='header'>
       <Logo />
       <Navigation list={dataListNavHeader}/>
       <EntryInAccount />

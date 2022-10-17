@@ -1,14 +1,18 @@
 import React from 'react';
+import { DecorBox } from '../../../common/DecorBox';
 import { GetStarted } from '../../../common/GetStarted';
+import { ContentSources } from './ContentSources';
 
-import { Plan } from './Plan';
 import StyledMain from './StyledMain';
+
+interface MainProps {};
 
 export const Main = () => {
   return (
     <StyledMain>
-      <Plan />
+      <ContentSources />
+      <DecorBox />
       <GetStarted />
     </StyledMain>
-  )
-}
+  );
+};

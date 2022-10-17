@@ -17,7 +17,7 @@ export const Main = () => {
       <Logo classCustom="logo" widthLogo={76}/>
       <Text />
       <OurTeam />
-      <GetStarted classCustom="getStarted"/>
+      <GetStarted />
     </StyledMain>
   );
 };

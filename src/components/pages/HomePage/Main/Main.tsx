@@ -10,6 +10,8 @@ import { DemoProject } from "./DemoProject";
 import { Decoration } from "./Decoration";
 import { ExpertsAgree } from "./ExpertsAgree";
 import { GetStarted } from "../../../common/GetStarted";
+import { DecorBox } from "../../../common/DecorBox";
+
 import StyledMain from "./StyledMain";
 
 export interface MainProps {}
@@ -33,11 +35,7 @@ export const Main = () => (
     <Decoration />
     <Step data={dataSteps[2]} margBtm={189} />
     <ExpertsAgree />
-    <section className="decor-box">
-      <p>
-        We've helped over 1,000 creatorsre claim control of their audience.
-      </p>
-    </section>
-    <GetStarted classCustom="getStarted" />
+    <DecorBox />
+    <GetStarted />
   </StyledMain>
 );

@@ -15,7 +15,7 @@ export default styled.main`
     }
   }
 
-  .getStarted {
+  .get-started {
     margin-bottom: 17.8rem;
   }
 `;

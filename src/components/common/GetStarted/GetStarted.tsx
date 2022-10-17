@@ -5,15 +5,11 @@ import { IconLogo } from '../IconLogo';
 
 import StyledGetStarted from './StyledGetStarted';
 
-interface GetStartedProps {
-  classCustom?: string,
-};
+interface GetStartedProps {};
 
-export const GetStarted = ({
-  classCustom
-}: GetStartedProps) => {
+export const GetStarted = () => {
   return (
-    <StyledGetStarted className={classCustom}>
+    <StyledGetStarted className="get-started">
       <IconLogo width={165} />
       <h2>Get Started Now</h2>
       <p>Setup is easy and takes under 5 minutes.</p>
