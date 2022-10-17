@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 export default styled.main`
-  max-width: 164rem;
-  margin: 0 auto;
+
+  .dec-box {
+    margin-bottom: 18.8rem;
+  }
+
   .get-started {
-    margin-bottom: 18rem;
+    margin-bottom: 18.2rem;
   }
 `;

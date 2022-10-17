@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import { AboutUs } from './components/pages/AboutUs';
+import { Blog } from './components/pages/Blog';
 import { HomePage } from './components/pages/HomePage';
 import { Pricing } from './components/pages/Pricing';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

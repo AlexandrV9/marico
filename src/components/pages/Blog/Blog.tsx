@@ -1,13 +1,18 @@
 import React from 'react';
+import { Footer } from '../../common/Footer';
+import { Header } from '../../common/Header';
+import { Main } from './Main';
 
-import styles from './Blog.module.scss';
+import StyledBlogProps from './StyledBlogProps';
 
 interface BlogProps {};
 
 export const Blog = () => {
   return (
-    <div className={styles.Blog}>
-      Blog Component
-    </div>
+    <StyledBlogProps>
+      <Header />
+      <Main />
+      <Footer />
+    </StyledBlogProps>
   );
 };
