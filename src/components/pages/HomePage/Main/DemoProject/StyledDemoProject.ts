@@ -74,4 +74,7 @@ export default styled.section`
     }
   }
 
+  .primary {
+    margin-right: 2rem;
+  }
 `;

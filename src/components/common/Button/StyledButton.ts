@@ -44,4 +44,22 @@ export default styled.button`
     background-color: #FFFFFF;
     color: #3C82F4;
   }
+
+  &.fifth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    padding: 1.3rem 0;
+    border: 2px solid #FFFFFF;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    color: white;
+    border-radius: 1.5rem;
+
+    img {
+      margin-right: 2rem;
+    }
+  }
 `;
