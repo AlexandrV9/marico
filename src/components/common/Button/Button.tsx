@@ -6,22 +6,25 @@ interface ButtonProps {
   classBtn: string,
   children?: ReactNode,
   width?: number,
-  height?: number
+  height?: number,
+  onClick?: any
 };
 
 export const Button = ({
   classBtn,
   children,
   width,
-  height
+  height,
+  onClick
 }: ButtonProps) => {
 
   return (
     <StyledButton 
       className={classBtn}
       style={{
-        width: width
+        width: width,
       }}
+      onClick={onClick}
     >
       {children}
     </StyledButton>

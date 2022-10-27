@@ -18,6 +18,20 @@ body {
   color: white;
 }
 
+body::-webkit-scrollbar {
+  width: 1.2rem;                        /* ширина всей полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track {
+  background: #2c2c2c;               /* цвет зоны отслеживания */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;           /* цвет бегунка */
+  border-radius: 20px;                 /* округлось бегунка */
+  border: 3px solid #2c2c2c;         /* отступ вокруг бегунка */
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

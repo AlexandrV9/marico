@@ -9,6 +9,7 @@ export default styled.div`
     font-size: 2rem;
     line-height: 3rem;
     border: none;
+    flex-shrink: 0;
 
     &.signIn {
       color: #707070;

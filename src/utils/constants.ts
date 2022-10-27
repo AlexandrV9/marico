@@ -14,6 +14,10 @@ import pathInstagram from "../icons/instagram.svg";
 import pathLinkedin from "../icons/linkedin.svg";
 import pathFackbook from "../icons/facebook.svg";
 
+import pathFacebook from "../icons/facebook-2.svg";
+import pathGoogle from "../icons/google.svg";
+import pathApple from "../icons/apple.svg";
+
 export interface itemListLoveMarico {
   id: number,
   title: string,
@@ -369,4 +373,55 @@ export const dataContentSources: Array<itemContentSources> = [
     pathImg: pathFackbook,
     soon: true,
   },
+]
+
+// export interface IDataSignItem {
+//   title: string,
+//   subtitle: string,
+//   conclusion: string,
+// }
+// export interface IDataSign {
+//   in: any,
+//   up: any
+// }
+
+export const dataSign: any = {
+  in: {
+    title: "Log in",
+    subtitle: "Login into existing account.",
+    conclusion: "Don’t have an account? Create One."
+  },
+  up: {
+    title: "Sign up",
+    subtitle: "Fill all field for create an account.",
+    conclusion: "Already have an account? Please Log in."
+  }
+}
+
+export interface IDataButtonsSign {
+  id: number,
+  text: string,
+  pathIcon: string,
+  altText: string,
+}
+
+export const dataButtonsSign: Array<IDataButtonsSign> = [
+  {
+    id: 41,
+    text: "Sign up with Apple",
+    pathIcon: pathApple,
+    altText: "apple"
+  },
+  {
+    id: 42,
+    text: "Sign up with Facebook",
+    pathIcon: pathFacebook,
+    altText: "facebook"
+  },
+  {
+    id: 43,
+    text: "Sign up with Google",
+    pathIcon: pathGoogle,
+    altText: "google"
+  }
 ]
